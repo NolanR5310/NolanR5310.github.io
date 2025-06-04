@@ -16,7 +16,7 @@ div.container, div.home-container {
 }
 
 h1.subscription {
-  all: unset; /* resets inherited styles from global h1 */
+  all: unset; 
   display: block;
   text-align: center;
   font-family: "cubano", sans-serif;
@@ -27,30 +27,22 @@ h1.subscription {
 }
 
 h1 {
-  width: 8em;              
-  height: auto;             
-  text-align: center;
-  margin: 1rem auto;        
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  width: 8em;
+  margin: 1rem 0 1rem 1em; 
+  display: block;
+  text-align: left;
 }
+
 
 h1 img {
-  width: 8em;
+  width: 100%;
   height: auto;
   display: block;
-  margin: 1em auto;
-  padding-left: 0; /* default for mobile */
+  margin: 0;
+  padding-left: 0;
 }
 
-/* Adjust for larger screens only */
-@media screen and (min-width: 60em) {
-  h1 img {
-    padding-left: 3em;
-  }
-}
+
 
 a {
 	text-decoration: none;
@@ -144,7 +136,7 @@ footer p {
 	figcaption,
 	section.tertiary h2 {
 		margin: 0;
-		padding: 0.2rem;
+		padding: 0.5rem;
 	}
 }
 @media only screen and (min-width: 60em) {
@@ -209,7 +201,7 @@ footer p {
 	}
 
 	section.secondary a figure img {
-		object-fit: contain; /* or remove object-fit if unnecessary */
+		object-fit: contain; 
 	  width: 100%;
 	  height: auto;
 	}
@@ -480,19 +472,17 @@ textarea {
   }
 }
 
+
 @media screen and (prefers-color-scheme: dark) {
   h1 {
     background-image: url("bigfish-alt.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center; 
-    margin-left: 2em;
-    width: 7em;
-    
+    background-position: left center; 
   }
 
   h1 img {
-    opacity: 0%; 
+    opacity: 0;
   }
  
   body {
@@ -530,6 +520,20 @@ section.personal-info ul li label{
 .contact-method ul li {
   color: #fefefe;
 }
-
-
 }
+@media screen and (prefers-color-scheme: dark) and (min-width: 60em) {
+  h1 {
+    background-image: url("bigfish-alt.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center; 
+    width: 7em;
+    margin:0.5em;
+  }
+
+  h1 img {
+    opacity: 0;
+  }
+}
+
+
