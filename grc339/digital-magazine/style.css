@@ -41,8 +41,15 @@ h1 img {
   width: 8em;
   height: auto;
   display: block;
-  margin: 1em;
-  padding-left: 3em;
+  margin: 1em auto;
+  padding-left: 0; /* default for mobile */
+}
+
+/* Adjust for larger screens only */
+@media screen and (min-width: 60em) {
+  h1 img {
+    padding-left: 3em;
+  }
 }
 
 a {
