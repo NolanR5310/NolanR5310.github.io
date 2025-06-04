@@ -521,7 +521,7 @@ section.personal-info ul li label{
   color: #fefefe;
 }
 }
-@media screen and (prefers-color-scheme: dark) and (min-width: 60em) {
+@media screen and (prefers-color-scheme: dark) and (min-width: 35em) {
   h1 {
     background-image: url("bigfish-alt.svg");
     background-repeat: no-repeat;
