@@ -334,7 +334,8 @@ section.personal-info{
     margin-bottom: 2em;
 }
 section.personal-info h1 {
-    text-align: center;
+    text-align: left;  /* center align fixed */
+    margin-left:0.3em;
     font-family: "cubano", sans-serif;
     font-style: normal;
 	  font-weight: bold;
@@ -343,7 +344,7 @@ section.personal-info h1 {
     margin-bottom: 0.5em;
 }
 section.personal-info h2 {
-    text-align: center;
+    text-align: left;  /* center align fixed */
     font-family: "cubano", sans-serif;
     color:  #6aabf6;
     font-weight: normal;
@@ -365,9 +366,11 @@ section.personal-info ul li{
 
 section.personal-info ul li label{
 	 flex: 1 0 10em;
-    font-weight: bold;
-    font-family: Bilo, sans-serif;
-    color: #333;
+    font-family: "baileywick-jf-gothic", sans-serif; /* non generic font */
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    padding-bottom: 0.2rem;
 }
 
 
@@ -427,7 +430,7 @@ textarea {
   font-size: 1.5rem;
   color: rgb(231, 60, 45);
   margin-bottom: 1em;
-  text-align: center;
+  text-align: left; /* center align fixed */
 }
 
 .subscription-options ul,
@@ -442,8 +445,9 @@ textarea {
 .subscription-options ul li,
 .contact-method ul li {
   margin-bottom: 0.75em;
-  font-family: "peridot-pe-variable", sans-serif;
-  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+ font-family: "baileywick-jf-gothic", sans-serif; /* non generic font */
+    font-weight: 400;
+    font-style: normal;
   font-size: 1rem;
   color: #333;
 }
@@ -500,7 +504,7 @@ textarea {
       
 }
   aside .secondary-aside p {
-  color: black;
+  color: #000000;   /* rgb value fixed */
 }
 
 section.personal-info{
